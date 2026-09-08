@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">David <span class="accent">Moravec</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html" class="nav-link">Domů</a></li>
+                <li><a href="omne.html" class="nav-link">Profil</a></li>
+                <li><a href="projekty.html" class="nav-link">Projekty</a></li>
+                <li><a href="kontakt.html" class="nav-link btn-contact active">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="contact container reveal">
+            <div class="contact-box">
+                <h2 class="section-title">Pojďme spolupracovat</h2>
+                <p class="contact-subtitle">Hledáte spolehlivého vývojáře pro svůj projekt? Případně plánujete rozšířit svůj technologický tým? Kontaktujte mě a probereme technické detaily vaší vize.</p>
+                
+                <form action="https://formspree.io/f/myknpged" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Vaše jméno nebo název společnosti" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Váš e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Specifikace projektu nebo dotaz..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Odeslat poptávku</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 David Moravec • Frontend Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

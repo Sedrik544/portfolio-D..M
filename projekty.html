@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekty | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">David <span class="accent">Moravec</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html" class="nav-link">Domů</a></li>
+                <li><a href="omne.html" class="nav-link">Profil</a></li>
+                <li><a href="projekty.html" class="nav-link active">Projekty</a></li>
+                <li><a href="kontakt.html" class="nav-link btn-contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="projects container reveal">
+            <div class="section-header">
+                <h2 class="section-title">Vybrané projekty</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="projects-grid">
+                
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="screenshot1.jpg" alt="Web pro Kavárnu">
+                        <div class="overlay">
+                            <a href="https://sedrik544.github.io/moje-kavarna/" target="_blank" class="overlay-link">Live produkce</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Kavárna Retro – Firemní prezentace</h3>
+                        <p>Responzivní webová prezentace optimalizovaná pro maximální výkon a konverzní poměr. Architektura je postavena na moderních CSS standardech a sémantickém HTML s ohledem na lokální SEO.</p>
+                        <div class="project-footer">
+                            <a href="https://github.com/sedrik544/moje-kavarna" target="_blank" class="github-link">Zdrojový kód (GitHub)</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="screenshot2.jpg" alt="Smart Task Dashboard">
+                        <div class="overlay">
+                            <a href="https://sedrik544.github.io/Smart-Task-Dashboard/" target="_blank" class="overlay-link">Live produkce</a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Smart Task Dashboard (SPA)</h3>
+                        <p>Single Page Application pro efektivní time-management. Implementace lokálního úložiště pro perzistenci dat, zpracování uživatelských událostí a dynamické vykreslování DOMu přes čistý JavaScript.</p>
+                        <div class="project-footer">
+                            <a href="https://github.com/sedrik544/Smart-Task-Dashboard" target="_blank" class="github-link">Zdrojový kód (GitHub)</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 David Moravec • Frontend Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

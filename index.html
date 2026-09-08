@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Frontend Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">D <span class="accent">M</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html" class="nav-link active">Domů</a></li>
+                <li><a href="omne.html" class="nav-link">Profil</a></li>
+                <li><a href="projekty.html" class="nav-link">Projekty</a></li>
+                <li><a href="kontakt.html" class="nav-link btn-contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero reveal">
+            <div class="container hero-wrapper">
+                <div class="hero-content">
+                    <span class="badge">Moderní webové technologie</span>
+                    
+                    <h1 class="hero-title">Frontend <span class="accent" id="typewriter"></span></h1>
+                    
+                    <p class="hero-text">
+                        Specializuji se na vývoj responzivních webových aplikací a moderních uživatelských rozhraní. Kladu důraz na čistou architekturu kódu, webovou přístupnost a maximální výkon.    
+                    </p>
+                    
+                    <div class="hero-btns">
+                        <a href="projekty.html" class="btn btn-primary">Prohlédnout portfolio</a>
+                        <a href="kontakt.html" class="btn btn-outline">Zahájit spolupráci</a>
+                    </div>
+
+                    <div class="hero-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Pracovní prostředí" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 David Moravec • Frontend Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
