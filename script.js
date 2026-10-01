@@ -52,11 +52,11 @@ const navList = document.getElementById('nav-list');
 
 if (hamburger && navList) {
     hamburger.addEventListener('click', () => {
-        navList.classList.toggle('active');
-        
-        // Animace hamburger ikonky
-        hamburger.classList.toggle('toggle');
-    });
+    const isOpen = navList.classList.toggle('active');
+
+    hamburger.classList.toggle('toggle', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+});
 }
 
 // SPUŠTĚNÍ VŠEHO
