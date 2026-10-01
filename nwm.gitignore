@@ -1,0 +1,9 @@
+.vs/
+.vscode/
+*.vsidx
+*.sqlite
+*.user
+*.suo
+DocumentLayout.json
+DocumentLayout.backup.json
+VSWorkspaceState.json
